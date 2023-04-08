@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="tickets-wrap">
+    <div class="tickets-add">
+      <div class="tickets-add-btn">Добавить тикет</div>
+    </div>
+    <div class="tickets-list">
+    
+
+    </div>
+
+  </div>
+  
+  <div class="modal modal-add">
+    <div class="modal-content">
+      <h3>Добавить тикет</h3>
+      <form class="add-form">
+        <p><label for="name">Краткое описание</label></p>
+        <p><input type="text" class="modal-add-name" name="name" id="name"></p>
+        <p><label for="description">Краткое описание</label></p>
+        <p><textarea class="modal-add-description" name="description" id="description"></textarea></p>
+        <p><button class="cancel-btn">Отмена</button>
+        <button class="ok-btn">ОК</button></p>
+      </form>
+    </div>
+  </div>
+    
+  <div class="modal modal-update">
+    <div class="modal-content">
+      <h3>Редактировать тикет</h3>
+      <form class="update-form">
+        <p><label for="name">Краткое описание</label></p>
+        <p><input type="text" class="modal-update-name" name="name" id="name"></p>
+        <p><label for="description">Краткое описание</label></p>
+        <p><textarea class="modal-update-description" name="description" id="description"></textarea></p>
+        <p><button class="cancel-btn">Отмена</button>
+        <button class="ok-btn">ОК</button></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal modal-remove">
+    <div class="modal-content">
+      <h3>Удалить тикет</h3>
+      <form class="remove-form">
+
+        <p>Вы уверены, что хотите удалить тикет? Это действие необратимо.</p>
+        <p><button class="cancel-btn">Отмена</button>
+        <button class="ok-btn">ОК</button></p>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

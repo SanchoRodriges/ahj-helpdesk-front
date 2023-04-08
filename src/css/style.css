@@ -1,0 +1,81 @@
+body {
+    color: #999;
+}
+
+.tickets-add {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.tickets-add-btn {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.tickets-add-btn:hover {
+    text-decoration: underline;
+}
+.tickets-wrap {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.ticket_status,
+.ticket_update,
+.ticket_remove {
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.ticket_status:hover,
+.ticket_update:hover,
+.ticket_remove:hover {
+    border: 1px solid #333;
+}
+
+.ticket_content {
+    flex: 1;
+}
+
+.ticket_name,
+.ticket_created {
+    line-height: 42px;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+}
